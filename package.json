@@ -3,22 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "@auth/prisma-adapter": "^2.7.3",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "formidable": "^3.5.2",
+    "jose": "^5.9.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "next": "^14.0.0",
+    "next-auth": "^5.0.0-beta.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/formidable": "^3.4.5",
+    "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "eslint-config-next": "15.0.3",
+    "typescript": "^5"
   }
 }
