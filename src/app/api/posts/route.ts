@@ -25,12 +25,12 @@ export async function GET(request: AuthenticateRequest) {
   try {
     // Fetch posts with pagination
     const posts = await Post.find({})
+      .populate('userId', 'username profileImage')
       .sort({ createdAt: -1 }) // Sort by most recent first
       .skip(skip)
       .limit(limit)
       .exec();
 
-    // Get the total count of posts for pagination
     const totalPosts = await Post.countDocuments();
 
     return NextResponse.json({
